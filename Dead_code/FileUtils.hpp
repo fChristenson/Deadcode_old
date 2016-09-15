@@ -11,11 +11,12 @@
 
 #include <stdio.h>
 #include <vector>
+#include <set>
 #include <fstream>
 #include "FileData.hpp"
 #include "Line.hpp"
 
 FileData fileToFileData(const char* filepath);
-std::vector<std::string> findDeadFiles(std::vector<FileData> files);
+std::set<std::string> findDeadFiles(std::vector<FileData> files);
 
 #endif /* FileUtils_hpp */
