@@ -11,7 +11,7 @@
 #include <vector>
 #include <regex>
 #include "FileData.hpp"
-#include "PathUtils.hpp"
+#include "FileUtils.hpp"
 #include "StringUtils.hpp"
 #include "Predicates.hpp"
 
@@ -104,10 +104,10 @@ std::set<std::string> lineToFilePaths(const std::string& filepath, const std::st
     auto requirePath = requireToFilePath(line);
     auto importPath = importToFilePath(line);
     if(importPath != "") {
-        result.insert(relativeToAbsolute(filepath, importPath));
+        result.insert(removeFileEnding(relativeToAbsolute(filepath, importPath)));
     }
     else if(requirePath != "") {
-        result.insert(relativeToAbsolute(filepath, requirePath));
+        result.insert(removeFileEnding(relativeToAbsolute(filepath, requirePath)));
     }
     return result;
 };

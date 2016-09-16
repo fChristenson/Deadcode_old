@@ -63,7 +63,7 @@ std::string removeFileEnding(const std::string& file) {
     if(match.length() > 1) {
         return trim(match[1]);
     }
-    return "";
+    return file;
 }
 
 std::set<std::string> fileDataToFilepath(std::vector<FileData> files) {
