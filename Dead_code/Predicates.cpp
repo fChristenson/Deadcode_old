@@ -35,6 +35,10 @@ bool isDir(int possibleDir) {
     return possibleDir == DT_DIR;
 }
 
+bool isJavascriptFile(std::string path) {
+    return std::regex_match(path, std::regex(".+\\.jsx?$"));
+}
+
 bool isRequire(std::string line) {
     return std::regex_match(line, std::regex(".*require(.*)"));
 }

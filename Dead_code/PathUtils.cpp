@@ -131,7 +131,7 @@ std::vector<FileData> list
             auto files = walkDirectory(getFilePath(directory, pdir->d_name), callback, list);
             list.insert(list.begin(), files.begin(), files.end());
         }
-        if (isValidFile(pdir->d_name)&& !isDir(pdir->d_type)) {
+        if (isValidFile(pdir->d_name) && !isDir(pdir->d_type) && isJavascriptFile(pdir->d_name)) {
             list.push_back(callback(filepath));
         }
         pdir=readdir(dir);

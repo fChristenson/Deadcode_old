@@ -11,6 +11,8 @@
 
 #include <stdio.h>
 
+bool isJavascriptFile(std::string path);
+
 bool isFileMatch(std::string file, std::string path);
 
 bool isValidFile(const char* file);

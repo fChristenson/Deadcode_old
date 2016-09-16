@@ -66,7 +66,7 @@ std::string removeFileEnding(const std::string& file) {
     return "";
 }
 
-std::set<std::string> findFiles(std::vector<FileData> files) {
+std::set<std::string> fileDataToFilepath(std::vector<FileData> files) {
     auto results = std::set<std::string>();
     for(auto file : files) {
         results.insert(removeFileEnding(file.filepath));
@@ -76,7 +76,7 @@ std::set<std::string> findFiles(std::vector<FileData> files) {
 
 std::set<std::string> findDeadFiles(std::vector<FileData> files) {
     auto usedFiles = findUsedFiles(files);
-    auto allFiles = findFiles(files);
+    auto allFiles = fileDataToFilepath(files);
     auto matches = findPathMatches(usedFiles, allFiles);
     auto result = std::set<std::string>();
     std::set_difference(
