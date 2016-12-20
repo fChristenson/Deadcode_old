@@ -1,11 +1,3 @@
-//
-//  PathUtils.cpp
-//  Dead_code
-//
-//  Created by Fredrik Christenson on 30/08/16.
-//  Copyright © 2016 Fredrik Christenson. All rights reserved.
-//
-
 #include <iostream>
 #include <dirent.h>
 #include <vector>

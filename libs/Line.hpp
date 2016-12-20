@@ -1,11 +1,3 @@
-//
-//  Line.hpp
-//  Dead_code
-//
-//  Created by Fredrik Christenson on 01/09/16.
-//  Copyright © 2016 Fredrik Christenson. All rights reserved.
-//
-
 #ifndef Line_hpp
 #define Line_hpp
 

@@ -1,0 +1,25 @@
+{
+  "name": "deadcode",
+  "version": "1.0.0",
+  "description": "CLI that figures out if there are any dead js files in the provided directory or subdirectories",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fChristenson/Deadcode.git"
+  },
+  "author": "Fredrik Christenson <fredrik.christenson@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fChristenson/Deadcode/issues"
+  },
+  "homepage": "https://github.com/fChristenson/Deadcode#readme",
+  "devDependencies": {
+    "node-gyp": "^3.4.0"
+  }
+}

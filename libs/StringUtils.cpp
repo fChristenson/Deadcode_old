@@ -1,11 +1,3 @@
-//
-//  StringUtils.cpp
-//  Dead_code
-//
-//  Created by Fredrik Christenson on 02/09/16.
-//  Copyright © 2016 Fredrik Christenson. All rights reserved.
-//
-
 #include "StringUtils.hpp"
 #include <iostream>
 #include <vector>

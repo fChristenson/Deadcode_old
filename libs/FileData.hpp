@@ -1,11 +1,3 @@
-//
-//  FileData.hpp
-//  Dead_code
-//
-//  Created by Fredrik Christenson on 30/08/16.
-//  Copyright © 2016 Fredrik Christenson. All rights reserved.
-//
-
 #ifndef FileData_hpp
 #define FileData_hpp
 

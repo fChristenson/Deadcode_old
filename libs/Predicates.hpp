@@ -1,11 +1,3 @@
-//
-//  Predicates.hpp
-//  Dead_code
-//
-//  Created by Fredrik Christenson on 09/09/16.
-//  Copyright © 2016 Fredrik Christenson. All rights reserved.
-//
-
 #ifndef Predicates_hpp
 #define Predicates_hpp
 

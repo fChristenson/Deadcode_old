@@ -1,11 +1,3 @@
-//
-//  Line.cpp
-//  Dead_code
-//
-//  Created by Fredrik Christenson on 01/09/16.
-//  Copyright © 2016 Fredrik Christenson. All rights reserved.
-//
-
 #include <iostream>
 #include "StringUtils.hpp"
 
