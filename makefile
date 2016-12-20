@@ -1,4 +1,4 @@
-build: main.cpp
+build:
 	clang++ -std=c++11 -stdlib=libc++ -o dead_code main.cpp
 
 clean:
