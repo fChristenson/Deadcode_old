@@ -1,5 +1,5 @@
 build:
-	clang++ -o dead_code main.cpp
+	clang++ -stdlib=libc++ -o dead_code main.cpp
 
 run: build
 	./dead_code

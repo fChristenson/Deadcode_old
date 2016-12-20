@@ -1,19 +1,23 @@
 #include <iostream>
-#include "./libs/PathUtils.hpp"
-#include "./libs/FileUtils.hpp"
+#include <set>
+#include "libs/PathUtils.hpp"
+#include "libs/FileUtils.hpp"
 
 using namespace std;
 
 int main(int argc, const char *argv[])
 {
-  auto files = walkDirectory(argv[1], fileToFileData);
-  auto possibleDeadFiles = findDeadFiles(files);
+  vector<FileData> files = walkDirectory(argv[1], fileToFileData);
+  set<string> possibleDeadFiles = findDeadFiles(files);
+
   cout << "===========================================" << endl;
   cout << "      The following files may be dead      " << endl;
   cout << "===========================================" << endl;
-  for (auto file : possibleDeadFiles)
+
+  for (set<string>::iterator i = possibleDeadFiles.begin(); i != possibleDeadFiles.end(); i++)
   {
-    cout << file << endl;
+    cout << *i << endl;
   }
+
   return 0;
 }
