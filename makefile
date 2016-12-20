@@ -1,7 +1,7 @@
 build:
 	clang++ -o dead_code main.cpp
 
-run: clean build
+run: build
 	./dead_code
 
 clean:
