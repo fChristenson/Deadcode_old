@@ -1,5 +1,8 @@
 build:
-	clang++ -std=c++11 -stdlib=libc++ -o dead_code main.cpp
+	clang++ -o dead_code main.cpp
+
+run: clean build
+	./dead_code
 
 clean:
 	rm dead_code
